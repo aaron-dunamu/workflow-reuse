@@ -7,6 +7,6 @@ on:
 
 jobs:
   workflow_job:
-    uses: ./.github/workflows/reusable_workflow.yml@main
+    uses: ./.github/workflows/reusable_workflow.yml
     with:
       service-name: "Reuse Workflow Service"
