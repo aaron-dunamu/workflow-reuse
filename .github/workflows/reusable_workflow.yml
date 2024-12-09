@@ -1,0 +1,15 @@
+name: build image
+
+on:
+  workflow_call:
+    inputs:
+      service-name:
+        required: true
+        type: string
+
+jobs:
+  build_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo input
+        run: echo ${{  inputs.service-name }}
